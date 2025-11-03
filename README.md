@@ -5,6 +5,10 @@ Projeto full-stack pequeno para inspecionar e armazenar webhooks. Monorepo com d
 - `api` — servidor Node.js (Fastify + Drizzle) para receber, armazenar e listar webhooks
 - `web` — frontend React (Vite + TypeScript) para visualizar webhooks e gerar handlers
 
+## Tela do Webhooks.inspect
+
+![webhook inspector screenshot](./assets/webhook_inspect.png)
+
 ## Tecnologias
 
 API (api/)
