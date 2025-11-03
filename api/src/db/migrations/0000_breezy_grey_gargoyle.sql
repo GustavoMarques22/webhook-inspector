@@ -9,5 +9,5 @@ CREATE TABLE "webhooks" (
 	"query_params" jsonb,
 	"headers" jsonb NOT NULL,
 	"body" text,
-	"createdat" timestamp DEFAULT now() NOT NULL
+	"created_at" timestamp DEFAULT now() NOT NULL
 );
