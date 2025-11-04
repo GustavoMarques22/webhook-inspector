@@ -40,35 +40,35 @@ Ferramentas de workspace
 ```
 node-react/
 ├─ api/
-│  ├─ package.json                # scripts e dependências do backend
+│  ├─ package.json                        # scripts e dependências do backend
 │  ├─ drizzle.config.ts
 │  ├─ src/
-│  │  ├─ server.ts                # entrada do Fastify
-│  │  ├─ env.ts                   # variáveis de ambiente
+│  │  ├─ server.ts                        # entrada do Fastify
+│  │  ├─ env.ts                           # variáveis de ambiente
 │  │  ├─ db/
-│  │  │  ├─ index.ts              # inicialização do Drizzle (db client)
-│  │  │  ├─ seed.ts               # script de seed (ex.: popular tabela)
+│  │  │  ├─ index.ts                      # inicialização do Drizzle (db client)
+│  │  │  ├─ seed.ts                       # script de seed (ex.: popular tabela)
 │  │  │  ├─ migrations/
 │  │  │  └─ schema/
-│  │  │     └─ webhooks.ts        # definição da tabela webhooks
+│  │  │     └─ webhooks.ts                # definição da tabela webhooks
 │  │  └─ routes/
-│  │     ├─ list-webhooks.ts      # rota GET /api/webhooks
-│  │     ├─ capture-webhook.ts    # rota para capturar webhooks
-│  │     └─ ...                   # outras rotas (generate, delete, get)
-│  └─ docker-compose.yml          # opcional: postgres para dev
+│  │     ├─ list-webhooks.ts              # rota GET /api/webhooks
+│  │     ├─ capture-webhook.ts            # rota para capturar webhooks
+│  │     └─ ...                           # outras rotas (generate, delete, get)
+│  └─ docker-compose.yml                  # opcional: postgres para dev
 
 ├─ web/
-│  ├─ package.json                # scripts e dependências do frontend
+│  ├─ package.json                        # scripts e dependências do frontend
 │  ├─ src/
-│  │  ├─ main.tsx                 # entrada do React
+│  │  ├─ main.tsx                         # entrada do React
 │  │  ├─ routes/
 │  │  │  ├─ index.tsx
 │  │  │  └─ webhooks.$id.tsx
 │  │  ├─ components/
-│  │  │  ├─ webhooks-list.tsx     # lista paginada de webhooks
-│  │  │  ├─ webhooks-list-item.tsx# item da lista
-│  │  │  └─ ui/                   # componentes pequenos (badge, checkbox..)
-│  │  └─ http/schemas/            # Zod schemas usados no cliente
+│  │  │  ├─ webhooks-list.tsx           # lista paginada de webhooks
+│  │  │  ├─ webhooks-list-item.tsx      # item da lista
+│  │  │  └─ ui/                         # componentes pequenos (badge, checkbox..)
+│  │  └─ http/schemas/                  # Zod schemas usados no cliente
 │  └─ public/
 
 ├─ package.json                    # workspace package.json (root)
